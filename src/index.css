@@ -1,0 +1,105 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.TodoForm{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-inline: 5vw;
+    border-bottom:  2px solid grey;
+    gap: 5px;
+}
+.TodoForm > h1{
+    color: white;
+}
+form{
+
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    background-color:#3b3939;
+    padding: 1rem;
+    gap: 12px;
+    border-radius: 5px;
+}
+
+form > *{
+    border-radius: 5px;
+}
+
+form > input{
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: wheat;
+    border: none;
+
+}
+
+form > button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+   cursor: pointer;
+   color: white;
+   background-color: black;
+    border: none;
+}
+
+
+
+.TodoTile{
+    color: white;
+    background-color: #3b3939;
+    display:  flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 12px;
+    justify-content: flex-start;
+    border-radius: 4px;
+    font-size:  1.1rem
+}
+
+.TodoTile > .Button-container{
+    display: flex;
+    gap: 5px;
+}
+
+.Button-container > button{
+    padding: 0.1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius:  5px;
+    color: white;
+    background-color: black;
+}
+
+.TodoList{
+    /* width: 100; */
+    overflow-x: hidden;
+    height: 70vh;
+    overflow-y: auto;
+    padding: 2rem;
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 12px;
+   align-items: center;
+}
+
+.TodoList > h1{
+    color: white;
+}
+
